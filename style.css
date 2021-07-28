@@ -1,0 +1,59 @@
+body {
+  background: #DCF5FF;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  justify-items: center;
+  -webkit-box-align: center;
+   align-items: center;
+  font-family: 'Nunito', 'sans-serif';
+}
+
+.inner {
+  padding: 0;
+  float: right;
+  background: #09c999;
+  height: 100vh;
+  width: 220vh;  
+  -webkit-clip-path: circle(5% at 95% 10%);
+          clip-path: circle(5% at 95% 10%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00B6FF;
+}
+
+.inner ul {
+  float: left;
+  padding-left: 5%;
+  color: white;
+  margin: 0;
+}
+
+.inner li {
+  padding-top: 15%;
+  align-items: center;
+  float: left;
+  padding-left: 5%;
+  color: white;
+  font-size: .8rem;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
